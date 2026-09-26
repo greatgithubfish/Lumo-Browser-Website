@@ -29,8 +29,8 @@
     const description = document.querySelector('meta[name="description"]');
     if (description && !support) {
       description.content = language === "zh"
-        ? "Lumo 5.0 为 iPad 带来桌面级浏览：命令面板、无痕空间、网页扩展、媒体视图、会话管理，以及清晰的使用指南。"
-        : "Lumo 5.0 brings desktop-class browsing to iPad: a command panel, private space, Web Extensions, Media View, sessions, and a practical user guide.";
+        ? "Lumo 5.0 build 475 为 iPad 带来桌面级浏览：命令面板、无痕空间、网页扩展、媒体视图，以及 iCloud 备份与同步。"
+        : "Lumo 5.0 build 475 brings desktop-class browsing to iPad: a command panel, private space, Web Extensions, Media View, and iCloud backup and sync.";
     }
   }
 

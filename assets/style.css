@@ -80,3 +80,19 @@ footer{display:flex;align-items:center;justify-content:space-between;gap:25px;pa
 .shortcut-grid kbd{min-width:58px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font:inherit;font-weight:750;text-align:center;white-space:nowrap}
 @media(max-width:940px){.shortcut-panel{grid-template-columns:1fr}.shortcut-grid{grid-template-columns:1fr auto 1fr auto}}
 @media(max-width:560px){.shortcut-panel{padding:25px}.shortcut-grid{grid-template-columns:1fr auto}}
+
+/* Build 475: backup and sync */
+.highlight:nth-child(4),.highlight:nth-child(5),.highlight:nth-child(6){grid-column:span 2;min-height:310px}
+.highlight.backup{background:linear-gradient(145deg,rgba(83,172,221,.2),var(--surface) 80%)}
+.backup-section{padding:0 0 110px;scroll-margin-top:30px}
+.backup-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.backup-card{display:flex;flex-direction:column;min-height:370px;padding:29px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(155deg,rgba(102,146,224,.13),var(--surface) 60%)}
+.backup-card:nth-child(2){background:linear-gradient(155deg,rgba(102,198,183,.16),var(--surface) 60%)}
+.backup-card:nth-child(3){background:linear-gradient(155deg,rgba(192,130,223,.15),var(--surface) 60%)}
+.backup-symbol{display:grid;place-items:center;width:48px;height:48px;margin-bottom:24px;border-radius:14px;background:rgba(116,84,223,.11);color:var(--brand);font-size:25px}
+.backup-kicker{color:var(--brand);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.backup-card h3{margin:9px 0 13px;font-size:clamp(23px,2.5vw,31px);line-height:1.15;letter-spacing:-.04em}
+.backup-card p{margin:0;color:var(--dim);font-size:15px}
+.backup-disclaimer{margin:17px 0 0;padding:17px 21px;border:1px solid var(--line);border-radius:15px;color:var(--dim);background:var(--surface);font-size:13px}
+@media(max-width:940px){.backup-grid{grid-template-columns:1fr}.backup-card{min-height:0}.highlight:nth-child(4),.highlight:nth-child(5),.highlight:nth-child(6){grid-column:span 3}}
+@media(max-width:700px){.highlight:nth-child(4),.highlight:nth-child(5),.highlight:nth-child(6){grid-column:auto;min-height:240px}.backup-section{padding-bottom:85px}}
