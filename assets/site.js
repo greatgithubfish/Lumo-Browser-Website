@@ -24,8 +24,14 @@
     if (button) button.textContent = language === "zh" ? "EN" : "中";
     const support = location.pathname.endsWith("support.html");
     document.title = language === "zh"
-      ? (support ? "Lumo 技术支持" : "Lumo 浏览器")
-      : (support ? "Lumo Support" : "Lumo Browser");
+      ? (support ? "Lumo 技术支持" : "Lumo 5.0 · iPad 上的桌面级浏览器")
+      : (support ? "Lumo Support" : "Lumo 5.0 · Desktop-class browsing for iPad");
+    const description = document.querySelector('meta[name="description"]');
+    if (description && !support) {
+      description.content = language === "zh"
+        ? "Lumo 5.0 为 iPad 带来桌面级浏览：命令面板、无痕空间、网页扩展、媒体视图、会话管理，以及清晰的使用指南。"
+        : "Lumo 5.0 brings desktop-class browsing to iPad: a command panel, private space, Web Extensions, Media View, sessions, and a practical user guide.";
+    }
   }
 
   button?.addEventListener("click", () => {
