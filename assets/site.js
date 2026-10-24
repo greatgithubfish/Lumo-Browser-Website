@@ -24,13 +24,13 @@
     if (button) button.textContent = language === "zh" ? "EN" : "中";
     const support = location.pathname.endsWith("support.html");
     document.title = language === "zh"
-      ? (support ? "Lumo 技术支持" : "Lumo 5.0 · iPad 上的桌面级浏览器")
-      : (support ? "Lumo Support" : "Lumo 5.0 · Desktop-class browsing for iPad");
+      ? (support ? "Lumo 技术支持" : "Lumo 6.0 · iPad 上的桌面级浏览器")
+      : (support ? "Lumo Support" : "Lumo 6.0 · Desktop-class browsing for iPad");
     const description = document.querySelector('meta[name="description"]');
     if (description && !support) {
       description.content = language === "zh"
-        ? "Lumo 5.0 build 475 为 iPad 带来桌面级浏览：命令面板、无痕空间、网页扩展、媒体视图，以及 iCloud 备份与同步。"
-        : "Lumo 5.0 build 475 brings desktop-class browsing to iPad: a command panel, private space, Web Extensions, Media View, and iCloud backup and sync.";
+        ? "Lumo 6.0 焕新 iPad 侧边栏：可自定 Profile、整理标签和文件夹、拖放双网页工作台、临时预览链接，并支持网页扩展与 iCloud 备份。"
+        : "Lumo 6.0 brings a refined sidebar, customizable Profiles, a two-page workspace, link previews, Web Extensions, and iCloud backup to iPad.";
     }
   }
 
