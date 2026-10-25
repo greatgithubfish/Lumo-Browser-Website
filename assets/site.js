@@ -24,13 +24,13 @@
     if (button) button.textContent = language === "zh" ? "EN" : "中";
     const support = location.pathname.endsWith("support.html");
     document.title = language === "zh"
-      ? (support ? "Lumo 技术支持" : "Lumo 6.0 · iPad 上的桌面级浏览器")
-      : (support ? "Lumo Support" : "Lumo 6.0 · Desktop-class browsing for iPad");
+      ? (support ? "Lumo 技术支持" : "Lumo 6.0 · iPhone 与 iPad 侧边栏浏览器")
+      : (support ? "Lumo Support" : "Lumo 6.0 · Sidebar browsing for iPhone and iPad");
     const description = document.querySelector('meta[name="description"]');
     if (description && !support) {
       description.content = language === "zh"
-        ? "Lumo 6.0 焕新 iPad 侧边栏：可自定 Profile、整理标签和文件夹、拖放双网页工作台、临时预览链接，并支持网页扩展与 iCloud 备份。"
-        : "Lumo 6.0 brings a refined sidebar, customizable Profiles, a two-page workspace, link previews, Web Extensions, and iCloud backup to iPad.";
+        ? "Lumo 6.0 让侧边栏浏览来到 iPhone 与 iPad：空间、固定网站、焕新的起始页、宽屏双网页工作台，以及丰富的网页工具。"
+        : "Lumo 6.0 brings sidebar browsing to iPhone and iPad, with Spaces, a redesigned start page, a two-page workspace on wide screens, and tools for the web.";
     }
   }
 
