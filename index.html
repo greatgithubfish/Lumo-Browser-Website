@@ -8,6 +8,7 @@
   <title>Lumo 6.0 · iPhone 与 iPad 侧边栏浏览器</title>
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/redesign.css">
 </head>
 <body>
   <header class="nav shell">
@@ -36,37 +37,21 @@
         <p class="availability" data-zh="iPhone 与 iPad · iOS / iPadOS 18 及以上 · 8 种界面语言 · 网页扩展需 18.4+" data-en="iPhone and iPad · iOS / iPadOS 18+ · 8 interface languages · Web Extensions require 18.4+">iPhone 与 iPad · iOS / iPadOS 18 及以上 · 8 种界面语言 · 网页扩展需 18.4+</p>
       </div>
 
-      <div class="browser-stage" aria-label="Lumo workspace preview">
-        <div class="browser-window">
-          <aside class="demo-sidebar">
-            <div class="demo-profile"><span class="avatar">L</span><strong>Lumo</strong><span class="demo-profile-pill">● <span data-zh="工作" data-en="Work">工作</span>⌄</span></div>
-            <div class="quick-grid"><b>G</b><b>W</b><b>N</b><b>D</b><b>F</b><b>A</b><b>C</b><b>M</b><b>⌘</b></div>
-            <div class="demo-folder"><span>▣</span><strong data-zh="项目" data-en="Projects">项目</strong><small>8</small></div>
-            <div class="demo-tab active"><span>◉</span><div><strong data-zh="项目文档" data-en="Project docs">项目文档</strong></div></div>
-            <div class="demo-tab"><span>◆</span><div><strong data-zh="数据面板" data-en="Dashboard">数据面板</strong></div></div>
-          </aside>
-          <section class="demo-page">
-            <div class="demo-toolbar"><span>‹</span><span>›</span><span>↻</span><div>🔒 example.com</div><span>▦</span><span>✦</span></div>
-            <div class="demo-document">
-              <span class="mini-label" data-zh="桌面网页" data-en="DESKTOP SITE">桌面网页</span>
-              <h2 data-zh="今天的工作，<br>不必回到电脑。" data-en="Today’s work,<br>without going back to a PC.">今天的工作，<br>不必回到电脑。</h2>
-              <div class="demo-lines"><i></i><i></i><i></i><i></i></div>
-            </div>
-          </section>
-          <aside class="demo-ai">
-            <div class="ai-title"><span>▦</span><strong data-zh="资料库" data-en="Library">资料库</strong></div>
-            <div class="demo-library-row"><span>◷</span><strong data-zh="历史记录" data-en="History">历史记录</strong></div>
-            <div class="demo-library-row"><span>↓</span><strong data-zh="下载" data-en="Downloads">下载</strong></div>
-            <div class="demo-library-row"><span>▤</span><strong data-zh="阅读列表" data-en="Reading List">阅读列表</strong></div>
-            <div class="demo-library-row"><span>▣</span><strong data-zh="会话" data-en="Sessions">会话</strong></div>
-          </aside>
-          <div class="demo-command" aria-hidden="true"><div class="command-search"><span>⌕</span><span data-zh="搜索、输入网址或运行命令" data-en="Search, enter a URL, or run a command">搜索、输入网址或运行命令</span><kbd>⌘⇧P</kbd></div><div class="command-options"><span data-zh="新建标签页" data-en="New Tab">新建标签页</span><span data-zh="页内查找" data-en="Find in Page">页内查找</span><span data-zh="自定工具栏" data-en="Customize Toolbar">自定工具栏</span></div></div>
-        </div>
+      <div class="real-stage" aria-label="Real Lumo screenshots on iPad and iPhone">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <figure class="real-ipad">
+          <img src="assets/lumo-ipad-real.webp" width="1376" height="1032" alt="Lumo 6.0 running on iPad, showing the sidebar and start page" fetchpriority="high">
+          <figcaption><span data-zh="真实画面 · iPad" data-en="Real interface · iPad">真实画面 · iPad</span><span>01 / 02</span></figcaption>
+        </figure>
+        <figure class="real-iphone">
+          <img src="assets/lumo-iphone-home.webp" width="630" height="1368" alt="Lumo 6.0 start page and bottom toolbar on iPhone" fetchpriority="high">
+          <figcaption data-zh="iPhone 真实画面" data-en="Real iPhone interface">iPhone 真实画面</figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="device-guide shell" aria-label="Layouts for different screens">
-      <article><span class="device-icon">↗</span><h2 data-zh="在 iPhone 上，一滑打开侧边栏" data-en="On iPhone, swipe in your sidebar">在 iPhone 上，一滑打开侧边栏</h2><p data-zh="网页铺满屏幕，地址栏、前进后退和刷新按钮在底部。从左边缘向右滑打开侧边栏，左右滑动切换空间；点网页或往左拉即可收起。助手、笔记、翻译等工具可从底部「更多」打开。" data-en="Pages fill the screen, with the address bar, navigation, and reload at the bottom. Swipe right from the left edge for the sidebar, swipe sideways to change Spaces, and tap or pull the page back to close it. Open the assistant, Notes, translation, and other tools from More at the bottom.">网页铺满屏幕，地址栏、前进后退和刷新按钮在底部。从左边缘向右滑打开侧边栏，左右滑动切换空间；点网页或往左拉即可收起。助手、笔记、翻译等工具可从底部「更多」打开。</p></article>
+      <article class="phone-story"><div><span class="device-icon">↗</span><h2 data-zh="在 iPhone 上，一滑打开侧边栏" data-en="On iPhone, swipe in your sidebar">在 iPhone 上，一滑打开侧边栏</h2><p data-zh="网页铺满屏幕，地址栏、前进后退和刷新按钮在底部。从左边缘向右滑打开侧边栏，左右滑动切换空间；点网页或往左拉即可收起。助手、笔记、翻译等工具可从底部「更多」打开。" data-en="Pages fill the screen, with the address bar, navigation, and reload at the bottom. Swipe right from the left edge for the sidebar, swipe sideways to change Spaces, and tap or pull the page back to close it. Open the assistant, Notes, translation, and other tools from More at the bottom.">网页铺满屏幕，地址栏、前进后退和刷新按钮在底部。从左边缘向右滑打开侧边栏，左右滑动切换空间；点网页或往左拉即可收起。助手、笔记、翻译等工具可从底部「更多」打开。</p></div><img src="assets/lumo-iphone-sidebar.webp" width="630" height="1368" alt="Lumo sidebar opened with a swipe on iPhone" loading="lazy"></article>
       <article><span class="device-icon">◫</span><h2 data-zh="在 iPad 和宽屏上，并排工作" data-en="On iPad and wide screens, work side by side">在 iPad 和宽屏上，并排工作</h2><p data-zh="侧边栏常驻左侧，工具栏位于顶部。把标签或固定网站拖到网页左半边或右半边即可开启双网页；窄窗口会自动切换为手机式布局。普通 iPhone 默认移动版网站，iPad 默认桌面版，也可从「更多」为单个网站切换。" data-en="The sidebar stays on the left and tools sit at the top. Drag a tab or pinned site to either side to open two pages. Narrow windows switch to the compact layout. iPhone defaults to mobile sites, iPad to desktop sites; use More to change an individual site.">侧边栏常驻左侧，工具栏位于顶部。把标签或固定网站拖到网页左半边或右半边即可开启双网页；窄窗口会自动切换为手机式布局。普通 iPhone 默认移动版网站，iPad 默认桌面版，也可从「更多」为单个网站切换。</p></article>
     </section>
 
