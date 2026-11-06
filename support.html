@@ -1,94 +1,246 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f8f7fc">
-  <meta name="description" content="Technical support for Lumo Browser on iPhone and iPad.">
-  <title>Lumo 技术支持</title>
-  <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/redesign.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fafafa">
+<meta name="description" content="Lumo 6.3：iPhone 与 iPad 侧边栏浏览器，支持独立登录空间、扩展、用户脚本与网页深色适配。">
+<title>Lumo 6.3 · 支持与使用指南</title>
+<link rel="icon" href="favicon.svg">
+<script>try{const t=localStorage.getItem('lumo-site-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch{}</script>
+<link rel="stylesheet" href="assets/website.css?v=6.3">
+<script defer src="assets/site.js?v=6.3">
+</script>
 </head>
-<body>
-  <header class="nav shell">
-    <a class="brand" href="index.html"><span class="mark">L</span><span>Lumo</span></a>
-    <nav aria-label="Primary">
-      <a href="index.html" data-zh="首页" data-en="Home">首页</a>
-      <button class="language" type="button" aria-label="Switch language">EN</button>
-    </nav>
-  </header>
-
-  <main class="legal shell">
-    <p class="eyebrow" data-zh="Lumo 浏览器" data-en="Lumo Browser">Lumo 浏览器</p>
-    <h1 data-zh="技术支持" data-en="Support">技术支持</h1>
-    <p class="lead" data-zh="网站兼容、标签页、下载、AI 助手或购买遇到问题？这里有最快的排查方法，也可以直接联系开发者。" data-en="Having trouble with a website, tabs, downloads, the AI assistant, or a purchase? Start with the quick checks below or contact the developer.">网站兼容、标签页、下载、AI 助手或购买遇到问题？这里有最快的排查方法，也可以直接联系开发者。</p>
-
-    <div class="support-cards">
-      <a class="support-card primary-card" href="https://github.com/greatgithubfish/Lumo-Browser-Support/issues/new">
-        <strong data-zh="提交技术支持工单 ↗" data-en="Open a support request ↗">提交技术支持工单 ↗</strong>
-        <span data-zh="适合故障、网站兼容问题和功能建议，需要 GitHub 账号。" data-en="For bugs, website compatibility issues, and feature requests. A GitHub account is required.">适合故障、网站兼容问题和功能建议，需要 GitHub 账号。</span>
-      </a>
-      <a class="support-card" href="https://github.com/greatgithubfish/Lumo-Browser-Support/issues">
-        <strong data-zh="查看已知问题 ↗" data-en="View known issues ↗">查看已知问题 ↗</strong>
-        <span data-zh="看看是否已有解决办法，或了解正在处理的进度。" data-en="Check for an existing workaround or follow progress on an issue.">看看是否已有解决办法，或了解正在处理的进度。</span>
-      </a>
-    </div>
-
-    <section class="support-section">
-      <h2 data-zh="先试试这四步" data-en="Four quick checks">先试试这四步</h2>
-      <ol class="steps">
-        <li><b>1</b><span data-zh="确认 Lumo 和 iOS / iPadOS 已更新到可用的最新版本。" data-en="Update Lumo and iOS / iPadOS to the latest versions available to you.">确认 Lumo 和 iOS / iPadOS 已更新到可用的最新版本。</span></li>
-        <li><b>2</b><span data-zh="只关闭并重新打开有问题的标签页，再尝试刷新。" data-en="Close and reopen only the affected tab, then try reloading it.">只关闭并重新打开有问题的标签页，再尝试刷新。</span></li>
-        <li><b>3</b><span data-zh="在网站设置中切换到 Safari · macOS 身份，并暂时关闭该网站的广告拦截。" data-en="In Site Settings, try Safari · macOS and temporarily disable blocking for that site.">在网站设置中切换到 Safari · macOS 身份，并暂时关闭该网站的广告拦截。</span></li>
-        <li><b>4</b><span data-zh="在同一台设备、同一网络下用 Safari 打开，确认问题是否只发生在 Lumo。" data-en="Open the same page in Safari on the same device and network to see whether the issue is specific to Lumo.">在同一台设备、同一网络下用 Safari 打开，确认问题是否只发生在 Lumo。</span></li>
-      </ol>
-    </section>
-
-    <section class="support-section">
-      <h2 data-zh="常见问题" data-en="Frequently asked questions">常见问题</h2>
-      <div class="faq-list">
-        <details open>
-          <summary data-zh="网站为什么不是桌面版，或者按钮不能使用？" data-en="Why is a site not desktop-class, or why do some controls fail?">网站为什么不是桌面版，或者按钮不能使用？</summary>
-          <p data-zh="iPhone 默认打开移动版网页，iPad 默认桌面版。可从「更多」为当前网站切换版本；部分网站还会检测设备或浏览器身份。若仍有问题，请附上完整域名和截图。" data-en="iPhone defaults to mobile sites and iPad to desktop sites. Use More to change the view for the current site. Some sites also detect the device or browser identity; if the issue persists, include the full domain and a screenshot.">iPhone 默认打开移动版网页，iPad 默认桌面版。可从「更多」为当前网站切换版本；部分网站还会检测设备或浏览器身份。若仍有问题，请附上完整域名和截图。</p>
-        </details>
-        <details>
-          <summary data-zh="切回 Lumo 后，网页为什么需要重新加载？" data-en="Why does a page reload after returning to Lumo?">切回 Lumo 后，网页为什么需要重新加载？</summary>
-          <p data-zh="Lumo 会尽量保留最近使用的网页。系统在内存紧张时仍可能回收后台网页；标签、网址和标题会保留，重新选择后页面会恢复加载。重要表单请先保存。" data-en="Lumo keeps recently used pages resident when possible. The system may still reclaim background web content under memory pressure; the tab, URL, and title remain, and the page reloads when selected. Save important form work first.">Lumo 会尽量保留最近使用的网页。系统在内存紧张时仍可能回收后台网页；标签、网址和标题会保留，重新选择后页面会恢复加载。重要表单请先保存。</p>
-        </details>
-        <details>
-          <summary data-zh="AI 助手会把我的网页发给 Lumo 吗？" data-en="Does the AI assistant send my pages to Lumo?">AI 助手会把我的网页发给 Lumo 吗？</summary>
-          <p data-zh="不会经过 Lumo 服务器。只有在你主动提问并允许读取页面时，相关内容才会直接发往你选择的 AI 服务。你也可以把某些网站设为从不读取或操作。" data-en="No content passes through a Lumo server. Only when you ask and allow page access is relevant content sent directly to your chosen AI service. You can mark specific sites as never available to the assistant.">不会经过 Lumo 服务器。只有在你主动提问并允许读取页面时，相关内容才会直接发往你选择的 AI 服务。你也可以把某些网站设为从不读取或操作。</p>
-        </details>
-        <details>
-          <summary data-zh="通行密钥或网站登录无法使用怎么办？" data-en="What if a passkey or website sign-in does not work?">通行密钥或网站登录无法使用怎么办？</summary>
-          <p data-zh="确认设备已开启 iCloud 钥匙串，并允许相应的密码管理器。部分登录服务会限制嵌入式浏览器；可尝试切换网站版本或身份，或在 Safari 完成该次登录。" data-en="Make sure iCloud Keychain is enabled and your credential provider is allowed. Some identity services restrict embedded browsers; try changing the site view or identity, or complete that sign-in in Safari.">确认设备已开启 iCloud 钥匙串，并允许相应的密码管理器。部分登录服务会限制嵌入式浏览器；可尝试切换网站版本或身份，或在 Safari 完成该次登录。</p>
-        </details>
-        <details>
-          <summary data-zh="备份在哪里？重装后如何恢复？" data-en="Where are my backups, and how do I restore one?">备份在哪里？重装后如何恢复？</summary>
-          <p data-zh="打开「设置 → 备份与同步」查看 iCloud 状态、启用每日自动备份或手动导出。自动备份保存在「文件 → iCloud 云盘 → Lumo → Backups」，最多保留最近 3 份。重装或换设备后，Lumo 会提示恢复最新备份；也可从备份页面导入文件。按类别恢复的内容会替换设备上对应数据，并在彻底关闭、重新打开 Lumo 后完成。自动备份不含密码与扩展安装包。" data-en="Open Settings → Backup & Sync to check iCloud, enable daily automatic backups, or export manually. Automatic copies are in Files → iCloud Drive → Lumo → Backups, with the latest three kept. After reinstalling or changing devices, Lumo offers the newest backup; you can also import a file from Backup & Sync. Restored categories replace the matching data on this device and finish applying after you fully close and reopen Lumo. Automatic backups exclude passwords and extension packages.">打开「设置 → 备份与同步」查看 iCloud 状态、启用每日自动备份或手动导出。自动备份保存在「文件 → iCloud 云盘 → Lumo → Backups」，最多保留最近 3 份。重装或换设备后，Lumo 会提示恢复最新备份；也可从备份页面导入文件。按类别恢复的内容会替换设备上对应数据，并在彻底关闭、重新打开 Lumo 后完成。自动备份不含密码与扩展安装包。</p>
-        </details>
-        <details>
-          <summary data-zh="更换设备后，Lumo Pro 为什么没有恢复？" data-en="Why is Lumo Pro missing after changing devices?">更换设备后，Lumo Pro 为什么没有恢复？</summary>
-          <p data-zh="Lumo Pro 提供月度、年度自动续期订阅和永久购买。请确认登录的是购买时使用的 Apple 账号，然后在 Lumo Pro 页面选择“恢复购买”。订阅状态与续费可在系统“设置 → Apple 账号 → 订阅”中管理；付款与退款由 Apple 处理。" data-en="Lumo Pro offers monthly and yearly auto-renewing subscriptions as well as a lifetime purchase. Sign in with the Apple Account used to purchase it, then choose Restore Purchases on the Lumo Pro screen. Manage renewals in device Settings → Apple Account → Subscriptions. Apple handles billing and refunds.">Lumo Pro 提供月度、年度自动续期订阅和永久购买。请确认登录的是购买时使用的 Apple 账号，然后在 Lumo Pro 页面选择“恢复购买”。订阅状态与续费可在系统“设置 → Apple 账号 → 订阅”中管理；付款与退款由 Apple 处理。</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="support-section">
-      <h2 data-zh="反馈时请附上" data-en="What to include">反馈时请附上</h2>
-      <ul class="check-list">
-        <li data-zh="iPhone / iPad 型号与 iOS / iPadOS 版本" data-en="Your iPhone / iPad model and iOS / iPadOS version">iPhone / iPad 型号与 iOS / iPadOS 版本</li>
-        <li data-zh="设置页面显示的 Lumo 版本和 Build 号" data-en="The Lumo version and build number shown in Settings">设置页面显示的 Lumo 版本和 Build 号</li>
-        <li data-zh="问题发生前的操作步骤，以及预期结果和实际结果" data-en="Steps before the issue, what you expected, and what happened">问题发生前的操作步骤，以及预期结果和实际结果</li>
-        <li data-zh="网站问题请提供完整域名；偶现问题请说明出现频率" data-en="For website issues, the full domain; for intermittent issues, how often it occurs">网站问题请提供完整域名；偶现问题请说明出现频率</li>
-        <li data-zh="删除个人信息后的截图或录屏" data-en="A screenshot or recording with personal information removed">删除个人信息后的截图或录屏</li>
-      </ul>
-      <p class="notice" data-zh="请勿在公开工单中提交密码、验证码、API Key、Cookie、带授权参数的私人网址、个人文件或其他敏感信息。" data-en="Never post passwords, verification codes, API keys, cookies, private URLs containing authorization parameters, personal files, or other sensitive information in a public ticket.">请勿在公开工单中提交密码、验证码、API Key、Cookie、带授权参数的私人网址、个人文件或其他敏感信息。</p>
-    </section>
-  </main>
-
-  <footer class="shell"><div class="brand"><span class="mark">L</span><span>Lumo</span></div><p>© 2026 Lumo Browser</p><div><a href="index.html" data-zh="首页" data-en="Home">首页</a></div></footer>
-  <script src="assets/site.js"></script>
+<body data-page="support">
+<a class="skip-link" href="#main" data-zh="跳到正文" data-en="Skip to content">跳到正文</a>
+<header class="site-header">
+<div class="shell header-inner">
+<a class="brand" href="index.html">
+<img src="assets/lumo-logo.png" width="32" height="32" alt="">
+<span>Lumo</span>
+</a>
+<nav aria-label="Main navigation">
+<a data-zh="6.3 新功能" data-en="New in 6.3" href="index.html#whats-new" class="">6.3 新功能</a>
+<a data-zh="功能" data-en="Features" href="index.html#features" class="">功能</a>
+<a data-zh="支持与指南" data-en="Support &amp; guides" href="support.html" class="">支持与指南</a>
+</nav>
+<div class="header-actions">
+<button class="theme-toggle" type="button" aria-label="切换深浅色" title="切换深浅色">
+<span aria-hidden="true">◐</span>
+</button>
+<button class="language" type="button" aria-label="Switch language">EN</button>
+<a data-zh="获取 Lumo ↗" data-en="Get Lumo ↗" href="https://apps.apple.com/app/id6794906429" class="button small">获取 Lumo ↗</a>
+</div>
+</div>
+</header>
+<main id="main" class="shell support-main">
+<section class="support-hero">
+<p data-zh="LUMO 6.3 / 帮助中心" data-en="LUMO 6.3 / HELP CENTER" class="eyebrow">LUMO 6.3 / 帮助中心</p>
+<h1 data-zh="找到答案，&lt;br&gt;&lt;span&gt;继续向前。&lt;/span&gt;" data-en="Find your answer.&lt;br&gt;&lt;span&gt;Keep moving.&lt;/span&gt;" >找到答案，<br>
+<span>继续向前。</span>
+</h1>
+<p data-zh="从第一步操作，到一次具体的排查。让功能真正为你所用。" data-en="From your first steps to a specific fix. Get comfortable with what Lumo can do." class="hero-lead">从第一步操作，到一次具体的排查。让功能真正为你所用。</p>
+<div class="help-search">
+<label for="help-search" data-zh="搜索使用说明与常见问题" data-en="Search guides and questions">搜索使用说明与常见问题</label>
+<input id="help-search" type="search" placeholder="搜索：下载、扩展、无痕……" data-placeholder-zh="搜索：下载、扩展、无痕……" data-placeholder-en="Search: downloads, extensions, private…" autocomplete="off" aria-controls="help-content">
+<span id="search-status" role="status" aria-live="polite">
+</span>
+</div>
+</section>
+<div class="support-layout">
+<aside class="help-nav">
+<p data-zh="使用说明" data-en="IN THIS GUIDE">使用说明</p>
+<nav aria-label="Help topics">
+<a data-zh="开始使用" data-en="Getting started" href="#start" class="">开始使用</a>
+<a data-zh="空间、标签与无痕" data-en="Spaces, tabs &amp; private browsing" href="#spaces" class="">空间、标签与无痕</a>
+<a data-zh="扩展与用户脚本" data-en="Extensions &amp; userscripts" href="#extensions" class="">扩展与用户脚本</a>
+<a data-zh="外观与网页显示" data-en="Appearance &amp; websites" href="#appearance" class="">外观与网页显示</a>
+<a data-zh="下载、保存与监控" data-en="Downloads, saving &amp; monitors" href="#downloads" class="">下载、保存与监控</a>
+<a data-zh="备份、同步与恢复" data-en="Backup, sync &amp; restore" href="#backup" class="">备份、同步与恢复</a>
+<a data-zh="AI、Pro 与权限" data-en="AI, Pro &amp; permissions" href="#ai-pro" class="">AI、Pro 与权限</a>
+<a data-zh="联系与反馈 ↗" data-en="Contact &amp; feedback ↗" href="#contact" class="">联系与反馈 ↗</a>
+</nav>
+</aside>
+<div id="help-content">
+<section id="start" class="help-section">
+<h2 data-zh="开始使用" data-en="Getting started" >开始使用</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="第一次打开，从哪里开始？" data-en="Where do I start?" >第一次打开，从哪里开始？</summary>
+<p data-zh="先打开一个网页，再认识侧边栏和工具栏。iPhone 地址栏在底部，从屏幕左边缘向右滑打开侧边栏；iPad 和宽屏的工具栏在顶部。点侧边栏搜索按钮，或按 ⌘⇧P，可查找标签、固定网站、历史记录和浏览器命令。" data-en="Open a page, then explore the sidebar and toolbar. On iPhone, the address bar is at the bottom; swipe right from the screen’s left edge for the sidebar. iPad and wide layouts put tools at the top. Sidebar search or ⌘⇧P finds tabs, pinned sites, history, and browser commands." >先打开一个网页，再认识侧边栏和工具栏。iPhone 地址栏在底部，从屏幕左边缘向右滑打开侧边栏；iPad 和宽屏的工具栏在顶部。点侧边栏搜索按钮，或按 ⌘⇧P，可查找标签、固定网站、历史记录和浏览器命令。</p>
+</details>
+<details>
+<summary data-zh="找不到某个功能按钮怎么办？" data-en="Where are the other tools?" >找不到某个功能按钮怎么办？</summary>
+<p data-zh="先打开工具栏的「更多」。媒体视图、网页工具、页面笔记、AI 助手等入口可在这里找到。选择「自定工具栏」整理显示项目和顺序。工具是否可用取决于当前页面、系统版本和 Pro 权益。" data-en="Open More in the toolbar for Media View, Web Toolkit, Notes, and the AI assistant. Use Customize Toolbar to choose and reorder tools. Availability depends on the page, system version, and your Pro entitlement." >先打开工具栏的「更多」。媒体视图、网页工具、页面笔记、AI 助手等入口可在这里找到。选择「自定工具栏」整理显示项目和顺序。工具是否可用取决于当前页面、系统版本和 Pro 权益。</p>
+</details>
+<details>
+<summary data-zh="支持哪些设备与系统？" data-en="Which devices and systems are supported?" >支持哪些设备与系统？</summary>
+<p data-zh="支持 iOS / iPadOS 18 及以上的 iPhone 与 iPad；网页扩展需要 18.4 或更高版本。窄窗口自动使用紧凑布局，双网页工作台适合宽屏。iPad 搭配妙控键盘、触控板和 Apple Pencil 使用更舒适；触控操作同样可用。" data-en="Lumo supports iPhone and iPad on iOS / iPadOS 18+. Web Extensions require 18.4+. Narrow windows use a compact layout; the two-page workspace is for wide screens. Magic Keyboard, a trackpad, and Apple Pencil complement iPad browsing, while touch controls remain available." >支持 iOS / iPadOS 18 及以上的 iPhone 与 iPad；网页扩展需要 18.4 或更高版本。窄窗口自动使用紧凑布局，双网页工作台适合宽屏。iPad 搭配妙控键盘、触控板和 Apple Pencil 使用更舒适；触控操作同样可用。</p>
+</details>
+</div>
+</section>
+<section id="spaces" class="help-section">
+<h2 data-zh="空间、标签与无痕" data-en="Spaces, tabs &amp; private browsing" >空间、标签与无痕</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="怎样固定标签、排序和创建文件夹？" data-en="How do I pin tabs and use folders?" >怎样固定标签、排序和创建文件夹？</summary>
+<p data-zh="拖动标签可调整顺序。长按标签或点右键选择固定，也可以拖到侧边栏上方的快捷区域。点底部「＋」新建文件夹，再把标签拖入文件夹。普通标签与固定网站是不同入口：关闭网页不等于删除固定网站。" data-en="Drag tabs to reorder them. Touch and hold or right-click a tab to pin it, or drag it to Quick Access near the top of the sidebar. Create a folder from +, then drag tabs into it. Closing an open page does not remove its pinned-site shortcut." >拖动标签可调整顺序。长按标签或点右键选择固定，也可以拖到侧边栏上方的快捷区域。点底部「＋」新建文件夹，再把标签拖入文件夹。普通标签与固定网站是不同入口：关闭网页不等于删除固定网站。</p>
+</details>
+<details>
+<summary data-zh="同一个网站怎样登录不同账号？" data-en="How do I use different accounts on one site?" >同一个网站怎样登录不同账号？</summary>
+<p data-zh="从侧边栏底部「＋」新建 Profile，并启用独立登录。不同空间使用各自的网站数据；原有空间是否独立以空间设置为准。网站登录状态不包含在备份中，换设备或恢复后可能需要重新登录。" data-en="Create a Profile from + at the bottom of the sidebar and enable separate sign-ins. Each isolated space uses its own website data; check existing spaces individually. Backups do not include sign-in sessions, so another device or a restore may require signing in again." >从侧边栏底部「＋」新建 Profile，并启用独立登录。不同空间使用各自的网站数据；原有空间是否独立以空间设置为准。网站登录状态不包含在备份中，换设备或恢复后可能需要重新登录。</p>
+</details>
+<details>
+<summary data-zh="怎样进入和结束无痕空间？" data-en="How do I enter and end private browsing?" >怎样进入和结束无痕空间？</summary>
+<p data-zh="点侧边栏底部「＋ → 进入无痕空间」最直接。也可以在侧边栏横向滑动到普通空间最左侧之外；边界有防误触阻力，需要明确完成滑动。无痕顶部的「结束」会关闭无痕会话；无痕不等于对网站或网络匿名，也不会自动清除已下载到文件夹的文件。" data-en="Use + → Enter Private Space at the bottom of the sidebar, or swipe past the leftmost ordinary space. The boundary requires a deliberate swipe to avoid accidental entry. End in the private header closes the session. Private browsing does not make you anonymous to sites or networks, and does not remove files already downloaded." >点侧边栏底部「＋ → 进入无痕空间」最直接。也可以在侧边栏横向滑动到普通空间最左侧之外；边界有防误触阻力，需要明确完成滑动。无痕顶部的「结束」会关闭无痕会话；无痕不等于对网站或网络匿名，也不会自动清除已下载到文件夹的文件。</p>
+</details>
+<details>
+<summary data-zh="关闭或清除标签后能恢复吗？" data-en="Can I recover closed tabs?" >关闭或清除标签后能恢复吗？</summary>
+<p data-zh="普通标签可用 ⌘⇧T 恢复，或使用界面提供的撤销操作。「清除」关闭当前空间打开的网页，保留固定网站入口。无痕会话结束后不应依赖历史记录或恢复标签找回内容。" data-en="Use ⌘⇧T for an ordinary closed tab, or the Undo action where offered. Clear closes open pages in the current space while keeping pinned shortcuts. Do not rely on history or tab restoration after ending a private session." >普通标签可用 ⌘⇧T 恢复，或使用界面提供的撤销操作。「清除」关闭当前空间打开的网页，保留固定网站入口。无痕会话结束后不应依赖历史记录或恢复标签找回内容。</p>
+</details>
+</div>
+</section>
+<section id="extensions" class="help-section">
+<h2 data-zh="扩展与用户脚本" data-en="Extensions &amp; userscripts" >扩展与用户脚本</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="怎样安装猫抓、SingleFile 等扩展？" data-en="How do I install Cat Catch or SingleFile?" >怎样安装猫抓、SingleFile 等扩展？</summary>
+<p data-zh="打开「设置 → 网页扩展」，优先使用应用内的商店安装入口。6.3 适配了猫抓与 SingleFile，但不保证所有桌面扩展可完整运行。查看权限后启用扩展，再从扩展菜单使用或固定到工具栏；它们需要网页扩展可用的系统和相应 Pro 权益。" data-en="Open Settings → Web Extensions and prefer the in-app store installation route. Version 6.3 supports Cat Catch and SingleFile, but not every desktop extension works fully. Review permissions, enable the extension, then open its menu or pin it to the toolbar. Supported system versions and the relevant Pro entitlement are required." >打开「设置 → 网页扩展」，优先使用应用内的商店安装入口。6.3 适配了猫抓与 SingleFile，但不保证所有桌面扩展可完整运行。查看权限后启用扩展，再从扩展菜单使用或固定到工具栏；它们需要网页扩展可用的系统和相应 Pro 权益。</p>
+</details>
+<details>
+<summary data-zh="商店安装能用，本地导入为什么不行？" data-en="Why can a store install work when a local import does not?" >商店安装能用，本地导入为什么不行？</summary>
+<p data-zh="本地支持 .crx、.xpi、.zip，但安装方式可能改变插件标识。依赖 Lumo 专用适配的扩展可能因此无法接通书签、历史或跳转接口。柠檬起始页请优先从 Lumo 内的商店搜索安装；不要仅凭同名或旧版本号判断本地包也能使用。反馈时附插件版本与安装来源。" data-en="Local .crx, .xpi, and .zip imports are supported, but the installation route can change an extension’s identifier. Extensions that depend on Lumo-specific integration may then lose bookmarks, history, or navigation access. For Lemon New Tab, prefer searching and installing through Lumo’s store. Include the extension version and installation source when reporting a problem." >本地支持 .crx、.xpi、.zip，但安装方式可能改变插件标识。依赖 Lumo 专用适配的扩展可能因此无法接通书签、历史或跳转接口。柠檬起始页请优先从 Lumo 内的商店搜索安装；不要仅凭同名或旧版本号判断本地包也能使用。反馈时附插件版本与安装来源。</p>
+</details>
+<details>
+<summary data-zh="柠檬起始页安装后怎样设为新标签页？" data-en="How do I use Lemon New Tab as my start page?" >柠檬起始页安装后怎样设为新标签页？</summary>
+<p data-zh="安装并启用后，在「设置 → 默认浏览设置」的「新标签页页面」选择该扩展，再新建一个普通标签页查看。现有标签不会被自动替换，无痕标签使用 Lumo 自带页面。更换插件前先导出插件自己的数据。" data-en="After installing and enabling it, choose the extension under Settings → Default Browsing → New tab page, then open a new ordinary tab. Existing tabs are not replaced, and private tabs use Lumo’s own page. Export the extension’s own data before replacing it." >安装并启用后，在「设置 → 默认浏览设置」的「新标签页页面」选择该扩展，再新建一个普通标签页查看。现有标签不会被自动替换，无痕标签使用 Lumo 自带页面。更换插件前先导出插件自己的数据。</p>
+</details>
+<details>
+<summary data-zh="篡改猴同步和用户脚本怎么用？" data-en="How do Tampermonkey sync and userscripts work?" >篡改猴同步和用户脚本怎么用？</summary>
+<p data-zh="使用 Lumo 内置的用户脚本管理，导入脚本或篡改猴 ZIP / JSON 备份；需要同步时在脚本设置中配置自己的 WebDAV。导入前查看兼容性、同名脚本处理和启用状态。这里适配的是脚本与备份格式，不代表篡改猴扩展本体可以在 WebKit 中完整运行。" data-en="Use Lumo’s built-in userscript manager to import scripts or Tampermonkey ZIP / JSON backups. Configure your own WebDAV in script settings for sync. Review compatibility, duplicate-name handling, and enabled states before importing. This supports scripts and backup formats; it does not mean the Tampermonkey extension itself runs fully in WebKit." >使用 Lumo 内置的用户脚本管理，导入脚本或篡改猴 ZIP / JSON 备份；需要同步时在脚本设置中配置自己的 WebDAV。导入前查看兼容性、同名脚本处理和启用状态。这里适配的是脚本与备份格式，不代表篡改猴扩展本体可以在 WebKit 中完整运行。</p>
+</details>
+<details>
+<summary data-zh="更新前已安装 Dark Reader，需要删除吗？" data-en="What if I already installed Dark Reader?" >更新前已安装 Dark Reader，需要删除吗？</summary>
+<p data-zh="6.3 已内置网页深色适配。建议先停用 Dark Reader 扩展，避免同一网页被两套配色同时处理；确认内置效果合适后，再自行决定是否移除扩展。不要为了排查颜色问题先清除网站数据。" data-en="Version 6.3 includes webpage dark mode. Disable the Dark Reader extension first to avoid two color engines processing the same page, then decide whether to remove it after checking the built-in result. Clearing website data is not a necessary first step for a color issue." >6.3 已内置网页深色适配。建议先停用 Dark Reader 扩展，避免同一网页被两套配色同时处理；确认内置效果合适后，再自行决定是否移除扩展。不要为了排查颜色问题先清除网站数据。</p>
+</details>
+</div>
+</section>
+<section id="appearance" class="help-section">
+<h2 data-zh="外观与网页显示" data-en="Appearance &amp; websites" >外观与网页显示</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="网页深色模式怎样跟随系统？" data-en="How does webpage dark mode follow the system?" >网页深色模式怎样跟随系统？</summary>
+<p data-zh="在「设置 → 外观」选择浅色、深色或跟随系统。网页会使用相应的深色适配；若某个站点显示异常，可到站点设置单独选择外观，再刷新查看。网站自身主题与扩展也会影响最终颜色。" data-en="Choose Light, Dark, or System in Settings → Appearance. Webpages follow the selected appearance. If one site looks wrong, choose an appearance for it in Site Settings and reload. The site’s own theme and installed extensions can also affect colors." >在「设置 → 外观」选择浅色、深色或跟随系统。网页会使用相应的深色适配；若某个站点显示异常，可到站点设置单独选择外观，再刷新查看。网站自身主题与扩展也会影响最终颜色。</p>
+</details>
+<details>
+<summary data-zh="水印和工具栏怎样自定义？" data-en="How do I customize watermarks and the toolbar?" >水印和工具栏怎样自定义？</summary>
+<p data-zh="在外观相关设置中编辑水印文字，支持颜文字与 Emoji，并可预览、关闭或恢复默认。工具栏从「更多 → 自定工具栏」调整；常用工具可固定，顺序可以拖动整理。" data-en="Edit watermark text in appearance settings, including kaomoji and emoji, with preview, hide, and reset options. Open More → Customize Toolbar to pin frequently used tools and drag them into your preferred order." >在外观相关设置中编辑水印文字，支持颜文字与 Emoji，并可预览、关闭或恢复默认。工具栏从「更多 → 自定工具栏」调整；常用工具可固定，顺序可以拖动整理。</p>
+</details>
+<details>
+<summary data-zh="网页打不开、显示不全或按钮无反应？" data-en="What if a page will not load or a control fails?" >网页打不开、显示不全或按钮无反应？</summary>
+<p data-zh="先保存未提交的表单，再刷新。依次检查该网站的桌面／移动版、浏览器身份、缩放与站点设置；临时停用影响该站点的扩展、用户脚本或拦截规则，每次只改一项。也可试「兼容模式」，再用同设备同网络的 Safari 对比。反馈请说明网址、页面模式与具体操作。" data-en="Save unfinished form work before reloading. Check the site view, browser identity, zoom, and per-site settings. Temporarily disable extensions, userscripts, or blocking for that site, changing one item at a time. Try Compatibility Mode and compare with Safari on the same device and network. Include the URL, page mode, and reproduction steps in your report." >先保存未提交的表单，再刷新。依次检查该网站的桌面／移动版、浏览器身份、缩放与站点设置；临时停用影响该站点的扩展、用户脚本或拦截规则，每次只改一项。也可试「兼容模式」，再用同设备同网络的 Safari 对比。反馈请说明网址、页面模式与具体操作。</p>
+</details>
+<details>
+<summary data-zh="为什么后台网页有时会重新加载？" data-en="Why do background pages sometimes reload?" >为什么后台网页有时会重新加载？</summary>
+<p data-zh="系统内存紧张时可能回收网页进程；Lumo 保留标签信息并在选中后恢复加载。页面中的未保存表单或临时状态不一定能完整恢复。编辑重要资料时请及时保存，避免同时开启大量重型网页。" data-en="Under memory pressure the system can reclaim web processes. Lumo keeps tab details and reloads the page when selected, but unsaved forms and temporary page state may not fully recover. Save important work and limit simultaneous heavyweight pages." >系统内存紧张时可能回收网页进程；Lumo 保留标签信息并在选中后恢复加载。页面中的未保存表单或临时状态不一定能完整恢复。编辑重要资料时请及时保存，避免同时开启大量重型网页。</p>
+</details>
+</div>
+</section>
+<section id="downloads" class="help-section">
+<h2 data-zh="下载、保存与监控" data-en="Downloads, saving &amp; monitors" >下载、保存与监控</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="删除 App 后，下载文件会保留吗？" data-en="Will downloaded files survive deleting the app?" >删除 App 后，下载文件会保留吗？</summary>
+<p data-zh="默认 Lumo 文件夹属于 App，删除 App 时会一起删除。想保留今后的下载，请在「设置 → 默认浏览设置」更改下载文件夹，选择 Lumo 容器之外的位置，例如 iCloud 云盘。原有文件不会自动迁移，请先用「文件」App 移动；第三方云盘的保留情况也取决于该服务。" data-en="The default Lumo folder belongs to the app and is removed when you delete it. To keep future downloads, change the download folder in Settings → Default Browsing to a location outside Lumo, such as iCloud Drive. Existing files do not move automatically; move them in Files first. Third-party cloud storage also follows its provider’s rules." >默认 Lumo 文件夹属于 App，删除 App 时会一起删除。想保留今后的下载，请在「设置 → 默认浏览设置」更改下载文件夹，选择 Lumo 容器之外的位置，例如 iCloud 云盘。原有文件不会自动迁移，请先用「文件」App 移动；第三方云盘的保留情况也取决于该服务。</p>
+</details>
+<details>
+<summary data-zh="下载文件夹不可用或下载失败怎么办？" data-en="What if the download folder is unavailable?" >下载文件夹不可用或下载失败怎么办？</summary>
+<p data-zh="先在「文件」App 确认目标文件夹可访问、云盘已登录且空间足够，再回到设置重新选择文件夹。Lumo 不会在目录失效时悄悄改存别处。文件下载不等于录制视频流，受保护媒体和部分流媒体无法直接保存。" data-en="Check in Files that the folder is accessible, its cloud provider is signed in, and there is enough storage. Select it again in Lumo settings. Lumo does not silently redirect a download when its folder is unavailable. File downloading is not stream recording; protected media and some streams cannot be saved directly." >先在「文件」App 确认目标文件夹可访问、云盘已登录且空间足够，再回到设置重新选择文件夹。Lumo 不会在目录失效时悄悄改存别处。文件下载不等于录制视频流，受保护媒体和部分流媒体无法直接保存。</p>
+</details>
+<details>
+<summary data-zh="怎样保存网页、批注或提取内容？" data-en="How do I save or annotate a page?" >怎样保存网页、批注或提取内容？</summary>
+<p data-zh="从页面操作或「更多」使用 PDF、整页长截图、页面笔记、批注、阅读列表与专业工具箱。宽屏可并排对照网页。工具箱提取结果取决于网页是否实际加载内容；若报告为空，先滚动加载目标区域，再重新扫描。部分工具属于 Pro。" data-en="Use page actions or More for PDF, full-page capture, notes, markup, Reading List, and Web Toolkit. Wide screens support side-by-side comparison. Extraction depends on content actually loaded by the page; scroll to the target area and rescan if a report is empty. Some tools require Pro." >从页面操作或「更多」使用 PDF、整页长截图、页面笔记、批注、阅读列表与专业工具箱。宽屏可并排对照网页。工具箱提取结果取决于网页是否实际加载内容；若报告为空，先滚动加载目标区域，再重新扫描。部分工具属于 Pro。</p>
+</details>
+<details>
+<summary data-zh="网页监控能每分钟在后台检查吗？" data-en="Can a monitor check every minute in the background?" >网页监控能每分钟在后台检查吗？</summary>
+<p data-zh="6.3 新增 1、5、10 分钟间隔。Lumo 打开时按设定检查；后台运行时间由 iOS / iPadOS 决定，可能间隔数小时，不能保证准点。监控使用创建时所属空间的登录数据；需要登录的网站请在该空间确认会话仍有效。" data-en="Version 6.3 adds 1-, 5-, and 10-minute intervals. Checks follow the interval while Lumo is open; iOS / iPadOS controls background execution, which may be hours apart. Scheduled background checks are not guaranteed. A monitor uses the sign-in data of its original space; verify that session for login-only pages." >6.3 新增 1、5、10 分钟间隔。Lumo 打开时按设定检查；后台运行时间由 iOS / iPadOS 决定，可能间隔数小时，不能保证准点。监控使用创建时所属空间的登录数据；需要登录的网站请在该空间确认会话仍有效。</p>
+</details>
+</div>
+</section>
+<section id="backup" class="help-section">
+<h2 data-zh="备份、同步与恢复" data-en="Backup, sync &amp; restore" >备份、同步与恢复</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="同步和备份有什么区别？" data-en="How are sync and backup different?" >同步和备份有什么区别？</summary>
+<p data-zh="iCloud 同步让受支持的空间、固定网站、书签与设置在设备间保持一致；备份是某个时间点的副本。日常同步不能替代备份。可在「设置 → 备份与同步」检查状态、启用自动备份或手动导出。" data-en="iCloud sync keeps supported spaces, pinned sites, bookmarks, and settings aligned across devices. A backup is a copy from a point in time. Sync is not a substitute for backup. Check status, enable automatic backups, or export manually in Settings → Backup &amp; Sync." >iCloud 同步让受支持的空间、固定网站、书签与设置在设备间保持一致；备份是某个时间点的副本。日常同步不能替代备份。可在「设置 → 备份与同步」检查状态、启用自动备份或手动导出。</p>
+</details>
+<details>
+<summary data-zh="自动备份在哪里？包含哪些内容？" data-en="Where are automatic backups and what is included?" >自动备份在哪里？包含哪些内容？</summary>
+<p data-zh="自动备份保存在「文件 → iCloud 云盘 → Lumo → Backups」，保留最近 3 份。自动备份不包含密码与扩展安装包；备份也不包含网站登录状态、已下载文件或缓存网页。手动导出可选择类别；要包含密码，需设置加密口令。" data-en="Find automatic backups in Files → iCloud Drive → Lumo → Backups; the latest three are kept. Automatic backups exclude passwords and extension packages. Backups also exclude website sign-ins, downloaded files, and cached pages. Manual export lets you select categories; including passwords requires an encryption passphrase." >自动备份保存在「文件 → iCloud 云盘 → Lumo → Backups」，保留最近 3 份。自动备份不包含密码与扩展安装包；备份也不包含网站登录状态、已下载文件或缓存网页。手动导出可选择类别；要包含密码，需设置加密口令。</p>
+</details>
+<details>
+<summary data-zh="换设备或重装后怎样恢复？" data-en="How do I restore after reinstalling or changing devices?" >换设备或重装后怎样恢复？</summary>
+<p data-zh="先确认使用同一个 iCloud 账户并等待同步，再检查 Lumo 提供的备份恢复提示，或从备份页面导入文件。按类别恢复会替换设备上对应的数据，请先保留当前重要内容，并按提示彻底关闭、重开 Lumo 完成。网站与扩展可能需要重新登录；加密口令丢失后无法找回。" data-en="Use the same iCloud account and allow sync to complete, then check Lumo’s restore offer or import a file in Backup &amp; Sync. Category restore replaces matching data on the device: keep a copy of important current data and follow the prompt to fully close and reopen Lumo. Sites and extensions may need sign-in again. A lost encryption passphrase cannot be recovered." >先确认使用同一个 iCloud 账户并等待同步，再检查 Lumo 提供的备份恢复提示，或从备份页面导入文件。按类别恢复会替换设备上对应的数据，请先保留当前重要内容，并按提示彻底关闭、重开 Lumo 完成。网站与扩展可能需要重新登录；加密口令丢失后无法找回。</p>
+</details>
+</div>
+</section>
+<section id="ai-pro" class="help-section">
+<h2 data-zh="AI、Pro 与权限" data-en="AI, Pro &amp; permissions" >AI、Pro 与权限</h2>
+<div class="faq-list">
+<details>
+<summary data-zh="怎样开始使用 AI？网页内容发给谁？" data-en="How do I set up AI, and who receives page content?" >怎样开始使用 AI？网页内容发给谁？</summary>
+<p data-zh="在「设置 → 助手」配置服务地址、模型与自己的 API Key，再打开 AI 助手提问。页面读取遵循你的授权与站点限制；相关内容直接发给你选择的服务，不经过 Lumo 服务器。API 服务费用和 Lumo Pro 是两回事，购买 Pro 不包含第三方 API 额度。" data-en="Configure your provider, model, and API key in Settings → Assistant, then open the assistant. Page access follows your permissions and site restrictions. Relevant content goes directly to your chosen service, not through a Lumo server. Provider charges are separate from Lumo Pro; Pro does not include third-party API credit." >在「设置 → 助手」配置服务地址、模型与自己的 API Key，再打开 AI 助手提问。页面读取遵循你的授权与站点限制；相关内容直接发给你选择的服务，不经过 Lumo 服务器。API 服务费用和 Lumo Pro 是两回事，购买 Pro 不包含第三方 API 额度。</p>
+</details>
+<details>
+<summary data-zh="购买 Pro 后没有解锁，或换设备后丢失？" data-en="What if Pro does not unlock or is missing on another device?" >购买 Pro 后没有解锁，或换设备后丢失？</summary>
+<p data-zh="网页扩展、用户脚本、AI 助手、媒体视图和网页监控等功能需要 Pro。确认 App Store 使用购买时的 Apple 账号，在 Lumo Pro 页面点「恢复购买」。月度、年度订阅可在系统「Apple 账号 → 订阅」管理，也有永久购买方案。价格以 App 内当地商店为准；账单与退款由 Apple 处理。" data-en="Features including Web Extensions, userscripts, AI Assistant, Media View, and page monitors require Pro. Use the Apple Account that made the purchase and tap Restore Purchases on the Lumo Pro screen. Manage monthly and yearly subscriptions in system Settings → Apple Account → Subscriptions; a lifetime option is also offered. Local in-app store pricing applies. Apple handles billing and refunds." >网页扩展、用户脚本、AI 助手、媒体视图和网页监控等功能需要 Pro。确认 App Store 使用购买时的 Apple 账号，在 Lumo Pro 页面点「恢复购买」。月度、年度订阅可在系统「Apple 账号 → 订阅」管理，也有永久购买方案。价格以 App 内当地商店为准；账单与退款由 Apple 处理。</p>
+</details>
+<details>
+<summary data-zh="本地网络权限会影响插件访问内网吗？" data-en="Does local-network permission let extensions access my LAN?" >本地网络权限会影响插件访问内网吗？</summary>
+<p data-zh="访问路由器、NAS 或其他内网服务时，系统可能要求本地网络权限。可在系统设置中检查 Lumo 的授权。但这不是所有插件通用的通行证：插件还受网站访问权限、WebKit 支持范围、HTTPS／证书和服务本身限制。不要为了排查而关闭系统安全保护。" data-en="Accessing a router, NAS, or other LAN service may require the system’s local-network permission. Check Lumo’s authorization in device settings. This is not blanket access for every extension: extension host permissions, WebKit support, HTTPS/certificates, and the service itself still apply." >访问路由器、NAS 或其他内网服务时，系统可能要求本地网络权限。可在系统设置中检查 Lumo 的授权。但这不是所有插件通用的通行证：插件还受网站访问权限、WebKit 支持范围、HTTPS／证书和服务本身限制。不要为了排查而关闭系统安全保护。</p>
+</details>
+<details>
+<summary data-zh="通行密钥或网站登录失败怎么办？" data-en="What if a passkey or website sign-in fails?" >通行密钥或网站登录失败怎么办？</summary>
+<p data-zh="检查设备的密码管理器、钥匙串与身份验证设置；确认登录发生在正确的 Profile 中。部分登录服务限制浏览器环境，可按站点切换网页模式或身份，并与 Safari 对比。在 Safari 登录不代表会话自动转移到 Lumo。" data-en="Check your credential provider, Keychain, and device authentication settings, and confirm the correct Profile. Some identity providers restrict browser environments: try per-site view or identity choices and compare with Safari. Signing in with Safari does not automatically transfer that session to Lumo." >检查设备的密码管理器、钥匙串与身份验证设置；确认登录发生在正确的 Profile 中。部分登录服务限制浏览器环境，可按站点切换网页模式或身份，并与 Safari 对比。在 Safari 登录不代表会话自动转移到 Lumo。</p>
+</details>
+</div>
+</section>
+<p data-zh="没有找到匹配内容。试试更短的关键词，或查看下面的反馈入口。" data-en="No matching questions. Try a shorter search or use the feedback links below." id="no-results" hidden>没有找到匹配内容。试试更短的关键词，或查看下面的反馈入口。</p>
+<section id="contact" class="contact-section">
+<p data-zh="STILL NEED A HAND?" data-en="STILL NEED A HAND?" class="eyebrow">STILL NEED A HAND?</p>
+<h2 data-zh="把问题交给我们。" data-en="Tell us what happened." >把问题交给我们。</h2>
+<p data-zh="先查已有问题；需要反馈时，清楚的复现步骤能帮助我们更快定位。公开工单需要 GitHub 账号。" data-en="Check existing issues first. Clear reproduction steps help us find a fix faster. Public support requests require a GitHub account." >先查已有问题；需要反馈时，清楚的复现步骤能帮助我们更快定位。公开工单需要 GitHub 账号。</p>
+<div class="support-cards">
+<a data-zh="提交问题 ↗" data-en="Open a support request ↗" href="https://github.com/greatgithubfish/Lumo-Browser-Support/issues/new" class="support-card">提交问题 ↗</a>
+<a data-zh="查看已有问题 ↗" data-en="Browse existing issues ↗" href="https://github.com/greatgithubfish/Lumo-Browser-Support/issues" class="support-card">查看已有问题 ↗</a>
+</div>
+<h3 data-zh="反馈前，准备这几项" data-en="Include these details" >反馈前，准备这几项</h3>
+<ul class="check-list">
+<li data-zh="设备型号、系统版本，以及设置底部的 Lumo 版本和 Build 号。" data-en="Device model, system version, and the Lumo version and build from the bottom of Settings." >设备型号、系统版本，以及设置底部的 Lumo 版本和 Build 号。</li>
+<li data-zh="具体操作、预期结果、实际结果，以及是否每次都出现。" data-en="Steps, expected and actual results, and how often the issue occurs." >具体操作、预期结果、实际结果，以及是否每次都出现。</li>
+<li data-zh="相关网址、扩展版本与安装来源；说明在 Safari 是否也能复现。" data-en="The URL, extension version and installation source, and whether it also happens in Safari." >相关网址、扩展版本与安装来源；说明在 Safari 是否也能复现。</li>
+<li data-zh="去除个人信息的截图或录屏；卡顿请附发生前后完整操作。" data-en="A screenshot or recording without personal information; for stutters, include the steps before and after." >去除个人信息的截图或录屏；卡顿请附发生前后完整操作。</li>
+</ul>
+<p data-zh="请勿公开密码、验证码、API Key、Cookie、带授权参数的网址或私人文件。排查前先保存重要内容，不要把删除 App 或清除全部数据作为第一步。" data-en="Do not post passwords, verification codes, API keys, cookies, authorization URLs, or private files. Save important work first; deleting the app or clearing all data should not be your first troubleshooting step." class="notice">请勿公开密码、验证码、API Key、Cookie、带授权参数的网址或私人文件。排查前先保存重要内容，不要把删除 App 或清除全部数据作为第一步。</p>
+</section>
+</div>
+</div>
+</main>
+<footer class="shell site-footer">
+<div>
+<a class="brand" href="index.html">
+<img src="assets/lumo-logo.png" width="28" height="28" alt="">
+<span>Lumo</span>
+</a>
+<p data-zh="Lumo，世界语里的「光」。" data-en="Lumo means “light” in Esperanto." >Lumo，世界语里的「光」。</p>
+</div>
+<div class="footer-links">
+<a data-zh="支持与使用指南" data-en="Support &amp; guides" href="support.html" class="">支持与使用指南</a>
+<a data-zh="反馈与建议 ↗" data-en="Feedback ↗" href="https://github.com/greatgithubfish/Lumo-Browser-Support/issues" class="">反馈与建议 ↗</a>
+</div>
+<p class="copyright" data-zh="LQ Studio&lt;br&gt;由 Leon &amp; QAnna 用心打造&lt;br&gt;© 2026 Leon &amp; QAnna。保留所有权利。" data-en="LQ Studio&lt;br&gt;Crafted with care by Leon &amp; QAnna&lt;br&gt;© 2026 Leon &amp; QAnna. All rights reserved.">LQ Studio<br>由 Leon & QAnna 用心打造<br>© 2026 Leon & QAnna。保留所有权利。</p>
+</footer>
 </body>
 </html>
