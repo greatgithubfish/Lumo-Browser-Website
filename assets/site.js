@@ -37,6 +37,7 @@
     document.querySelector('.site-header nav')?.setAttribute('aria-label', language === 'zh' ? '主导航' : 'Main navigation');
     document.querySelector('.help-nav nav')?.setAttribute('aria-label', language === 'zh' ? '帮助主题' : 'Help topics');
     document.querySelectorAll('[data-zh][data-en]').forEach(el => el.innerHTML = el.dataset[language]);
+    document.querySelectorAll('[data-aria-zh][data-aria-en]').forEach(el => el.setAttribute('aria-label',el.dataset[language === 'zh' ? 'ariaZh' : 'ariaEn']));
     document.querySelectorAll('[data-placeholder-zh]').forEach(el => el.placeholder = el.dataset[language === 'zh' ? 'placeholderZh' : 'placeholderEn']);
     document.querySelectorAll('a[href]').forEach(link => {
       const raw = link.getAttribute('href');
@@ -49,8 +50,8 @@
     button.textContent = language === 'zh' ? 'EN' : '中';
     button.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
     const support = document.body.dataset.page === 'support';
-    document.title = language === 'zh' ? (support ? 'Lumo 6.3 · 支持与使用指南' : 'Lumo 6.3 · 给浏览，多一种可能') : (support ? 'Lumo 6.3 · Support & guides' : 'Lumo 6.3 · A different way to browse');
-    document.querySelector('meta[name="description"]').content = language === 'zh' ? (support ? 'Lumo 6.3 使用指南：空间、标签、扩展、用户脚本、网页深色模式、下载、备份、AI 与购买问题。' : 'Lumo 6.3，适用于 iPhone 与 iPad 的侧边栏浏览器。独立登录空间、猫抓与 SingleFile、用户脚本同步、网页深色适配与自定义水印。') : (support ? 'Lumo 6.3 guides: spaces, tabs, extensions, userscripts, dark mode, downloads, backup, AI, and purchases.' : 'Lumo 6.3 for iPhone and iPad: separate sign-in spaces, Cat Catch and SingleFile, userscript sync, webpage dark mode, and custom watermarks.');
+    document.title = language === 'zh' ? (support ? 'Lumo 6.5 · 支持与使用指南' : 'Lumo 6.5 · 给浏览，多一种可能') : (support ? 'Lumo 6.5 · Support & guides' : 'Lumo 6.5 · A different way to browse');
+    document.querySelector('meta[name="description"]').content = language === 'zh' ? (support ? 'Lumo 6.5 使用指南：页面冲击波、ASCII 背景、Apple Watch 遥控、空间、扩展、网页深色模式、下载、备份与 AI。' : 'Lumo 6.5，适用于 iPhone 与 iPad 的侧边栏浏览器。观看页面冲击波演示，回顾 6.0–6.5 的空间、扩展、ASCII 起始页、Apple Watch 遥控与网页深色适配。') : (support ? 'Lumo 6.5 guides: Page Shockwave, ASCII backgrounds, Apple Watch remote, spaces, extensions, dark webpages, downloads, backup and AI.' : 'Meet Lumo 6.5 for iPhone and iPad. Watch Page Shockwave and explore spaces, extensions, ASCII start pages, Apple Watch remote and dark webpages across versions 6.0–6.5.');
     if (updateURL) { const url = new URL(location.href); url.searchParams.set('lang',language); history.replaceState(null,'',url); }
     themeMetadata();filter();
   }
