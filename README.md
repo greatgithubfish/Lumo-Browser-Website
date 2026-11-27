@@ -8,7 +8,7 @@ The bilingual marketing site and user guide for Lumo Browser, published with Git
 
 ## Content
 
-`index.html` presents the browser, real iPad/iPhone screenshots, interactive feature illustrations, the 6.6 preview, the existing Page Shockwave recording, and the 6.0–6.5 release archive.
+`index.html` presents the browser, an interactive tour with real iPad and iPhone screenshots, three switchable website palettes, feature illustrations, the 6.6 update, the existing Page Shockwave recording, and the 6.0–6.5 release archive.
 
 `support.html` retains the existing guide anchors and adds 6.6 instructions for scripts, private extension permissions, password autofill, bookmarks, iCloud sync and automatic Picture in Picture. Search, Chinese/English switching and light/dark appearance are shared through `assets/site.js` and `assets/website.css`.
 
@@ -24,7 +24,7 @@ Open `http://127.0.0.1:8666/`. Use `?lang=zh` or `?lang=en` to choose a language
 
 ## Release status
 
-As checked on 2026-11-25, the Chinese App Store listing reports version **6.5**. New features are explicitly labeled **6.6 preview**. When 6.6 becomes publicly available, update the preview labels and release-status messages in both pages and both languages. Keep historical 6.5 references in the recording and release archive.
+The Chinese App Store listing reports version **6.6** as of 2026-11-27. Historical 6.5 references identify the original recording and release notes.
 
 ## Deployment and verification
 

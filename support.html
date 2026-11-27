@@ -17,12 +17,15 @@
     <script>
       try {
         const t = localStorage.getItem("lumo-site-theme");
+        const palette = localStorage.getItem("lumo-site-palette");
         if (t === "light" || t === "dark")
           document.documentElement.dataset.theme = t;
+        if (["violet", "tide", "ember"].includes(palette))
+          document.documentElement.dataset.palette = palette;
       } catch {}
     </script>
-    <link rel="stylesheet" href="assets/website.css?v=6.6" />
-    <script defer src="assets/site.js?v=6.6"></script>
+    <link rel="stylesheet" href="assets/website.css?v=66-dot" />
+    <script defer src="assets/site.js?v=66-dot"></script>
   </head>
   <body data-page="support">
     <a
@@ -47,11 +50,11 @@
             class=""
             >探索 Lumo</a
           ><a
-            data-zh="6.6 更新预览"
-            data-en="6.6 preview"
+            data-zh="6.6 新功能"
+            data-en="6.6 update"
             href="index.html#whats-new"
             class=""
-            >6.6 更新预览</a
+            >6.6 新功能</a
           ><a data-zh="使用指南" data-en="Guides" href="support.html" class=""
             >使用指南</a
           >
@@ -122,11 +125,11 @@
           <p data-zh="使用说明" data-en="IN THIS GUIDE">使用说明</p>
           <nav aria-label="Help topics">
             <a
-              data-zh="6.6 更新预览"
-              data-en="6.6 preview"
+              data-zh="6.6 新功能"
+              data-en="6.6 update"
               href="#new-in-66"
               class=""
-              >6.6 更新预览</a
+              >6.6 新功能</a
             ><a
               data-zh="开始使用"
               data-en="Getting started"
@@ -193,14 +196,13 @@
         </aside>
         <div id="help-content">
           <section id="new-in-66" class="help-section">
-            <h2 data-zh="6.6 更新预览" data-en="6.6 preview">6.6 更新预览</h2>
+            <h2 data-zh="6.6 新功能" data-en="6.6 update">6.6 新功能</h2>
             <p
-              data-zh="以下为 6.6 的新增设置；App Store 当前公开版本为 6.5，实际上线以商店为准。"
-              data-en="These additions are part of 6.6. The current public App Store version is 6.5; availability follows the store release."
               class="guide-notice"
+              data-zh="以下说明适用于 App Store 的 6.6 及更新版本。"
+              data-en="These controls are available in Lumo 6.6 and later."
             >
-              以下为 6.6 的新增设置；App Store 当前公开版本为
-              6.5，实际上线以商店为准。
+              以下说明适用于 App Store 的 6.6 及更新版本。
             </p>
             <div class="faq-list">
               <details>

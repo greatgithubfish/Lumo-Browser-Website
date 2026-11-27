@@ -11,9 +11,7 @@
     const theme = localStorage.getItem("lumo-site-theme");
     if (["light", "dark"].includes(theme)) root.dataset.theme = theme;
   } catch {}
-  const systemTheme = matchMedia("(prefers-color-scheme: dark)");
-  const dark = () =>
-    root.dataset.theme ? root.dataset.theme === "dark" : systemTheme.matches;
+  const dark = () => root.dataset.theme !== "light";
   const themeButton = document.querySelector(".theme-toggle");
   const input = document.querySelector("#help-search");
   const filter = () => {
@@ -44,7 +42,7 @@
   function themeMetadata() {
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", dark() ? "#171719" : "#f7f7f2");
+      ?.setAttribute("content", dark() ? "#14141a" : "#f6f5f8");
     const next = dark()
       ? language === "zh"
         ? "切换到浅色"
@@ -141,6 +139,9 @@
     document.querySelectorAll("[data-zh][data-en]").forEach((el) => {
       el.innerHTML = el.dataset[language];
     });
+    document.querySelectorAll("[data-alt-zh][data-alt-en]").forEach((img) => {
+      img.alt = language === "zh" ? img.dataset.altZh : img.dataset.altEn;
+    });
     document
       .querySelectorAll("[data-aria-zh][data-aria-en]")
       .forEach((el) =>
@@ -184,11 +185,11 @@
     const description =
       language === "zh"
         ? support
-          ? "Lumo 使用指南与 6.6 更新预览：空间、用户脚本、扩展、密码、书签、iCloud 同步与 Apple Watch。"
-          : "Lumo，适用于 iPhone 与 iPad 的侧边栏浏览器。独立登录空间、扩展与用户脚本、阅读与翻译，以及 6.6 更新预览。"
+          ? "Lumo 使用指南与 6.6 新功能：空间、用户脚本、扩展、密码、书签、iCloud 同步与 Apple Watch。"
+          : "Lumo，适用于 iPhone 与 iPad 的侧边栏浏览器。独立登录空间、扩展与用户脚本、阅读与翻译，以及 6.6 新功能。"
         : support
-          ? "Lumo guides and the 6.6 preview: spaces, userscripts, extensions, passwords, bookmarks, iCloud sync and Apple Watch."
-          : "Your browser. Your kind of space. Explore Lumo for iPhone and iPad: separate sign-ins, extensions, userscripts and the 6.6 preview.";
+          ? "Lumo guides and the 6.6 update: spaces, userscripts, extensions, passwords, bookmarks, iCloud sync and Apple Watch."
+          : "Your browser. Your kind of space. Explore Lumo for iPhone and iPad: separate sign-ins, extensions, userscripts and the 6.6 update.";
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute("content", description);
@@ -221,7 +222,44 @@
     } catch {}
     themeMetadata();
   });
-  systemTheme.addEventListener("change", themeMetadata);
+  const deviceButtons = document.querySelectorAll("[data-device]");
+  const deviceSlides = document.querySelectorAll("[data-slide]");
+  const deviceCaptions = document.querySelectorAll("[data-slide-caption]");
+  deviceButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const device = button.dataset.device;
+      deviceButtons.forEach((option) => {
+        option.setAttribute("aria-pressed", String(option === button));
+      });
+      deviceSlides.forEach((slide) => {
+        slide.hidden = slide.dataset.slide !== device;
+      });
+      deviceCaptions.forEach((caption) => {
+        caption.hidden = caption.dataset.slideCaption !== device;
+      });
+    });
+  });
+
+  const paletteButtons = document.querySelectorAll("[data-palette-choice]");
+  function selectPalette(palette) {
+    root.dataset.palette = palette;
+    paletteButtons.forEach((option) => {
+      option.setAttribute(
+        "aria-pressed",
+        String(option.dataset.paletteChoice === palette),
+      );
+    });
+  }
+  selectPalette(root.dataset.palette || "violet");
+  paletteButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const palette = button.dataset.paletteChoice;
+      selectPalette(palette);
+      try {
+        localStorage.setItem("lumo-site-palette", palette);
+      } catch {}
+    });
+  });
   input?.addEventListener("input", filter);
   document.querySelectorAll('.help-nav a[href^="#"]').forEach((link) =>
     link.addEventListener("click", () => {
